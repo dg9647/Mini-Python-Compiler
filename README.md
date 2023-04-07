@@ -17,17 +17,16 @@ yacc -d -v proj1.y
 gcc lex.yy.c y.tab.c -lm -w
 a.exe
 ```
-2) The following commands execute the code in the '5-Target_Code' folder:
+2) The following commands execute the code in the '4-Target_Code' folder:
 ```
 python final.py
 ```
 
 ## Various folders
 1) **Token_And Symbol_Table:** This folder contains the code that outputs the tokens and the symbol table.
-2) **Abstract_Syntax_Tree:** This folder contains the code that displays the abstract syntax tree.
-3) **Intermediate_Code_Generation:** This folder contains the code that generates the symbol table before optimisations and the intermediate code.
-4) **Optimised_ICG:** This folder contains the code that generates the symbol table after optimisations, the quadruples table and the optimised intermediate code.
-5) **Target_Code:** This folder contains the code that displays the assembly code/target code.
+2) **Intermediate_Code_Generation:** This folder contains the code that generates the symbol table before optimisations and the intermediate code.
+3) **Optimised_ICG:** This folder contains the code that generates the symbol table after optimisations, the quadruples table and the optimised intermediate code.
+4) **Target_Code:** This folder contains the code that displays the assembly code/target code.
 
 ## Result and Shortcomings
 The mini-compiler built in this project works perfectly for the ‘if-else’ and ‘while’ constructs of Python language. Our compiler can be executed in different phases by building and running the code separated in the various folders. The final code displays the output of all the phases on the terminal, one after the other. First, the tokens are displayed, followed by a ‘PARSE SUCCESSFUL’ message. The abstract syntax tree is printed. Next, the symbol table along with the intermediate code is printed without optimisation. Finally, the symbol table and the intermediate code after optimisation is displayed after the quadruples table. The final output is the target code, written in the instruction set architecture followed by the hypothetical machine model introduced in this project. This is for inputs with no errors. But in case of erroneous inputs, the token generation is stopped on error encounter and the corresponding error message is displayed.
