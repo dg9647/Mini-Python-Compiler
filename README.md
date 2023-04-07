@@ -1,5 +1,4 @@
 # Mini-Python-Compiler
-This is our Compiler Design project for 6th semester. <br>
 
 ## Details
 + **Project Title:** Python Compiler (constructs: 'if-else', 'while')<br /> 
